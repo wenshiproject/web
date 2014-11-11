@@ -1,0 +1,163 @@
+注册<br>
+http://1.93.15.5:8080/admin/interface/register<br>
+step 1：通知发送验证码 <br>
+需要传参数<br>
+phone<br>
+返回结果<br>
+code <br>
+msg<br>
+step 2：通知验证<br>
+需要传参数<br>
+phone<br>
+code<br>
+返回结果<br>
+code <br>
+msg<br>
+step 3:注册成功<br>
+phone<br>
+passwd<br>
+code<br> 
+返回结果<br>
+code <br>
+msg<br>
+phone -- 注册成功返回<br>
+step 4: 重置密码 <br>
+需要传参数<br>
+phone<br>
+返回结果<br>
+code <br>
+msg<br>
+<br>
+登录<br>
+http://1.93.15.5:8080/admin/interface/login<br>
+需要传参数<br>
+phone<br>
+passwd<br>
+返回结果<br>
+code <br>
+msg<br>
+user_id -- 登录成功返回<br>
+<br>
+列表信息<br>
+http://1.93.15.5:8080/admin/interface/index<br>
+需要传参数<br>
+type 1:首页  2：搜索<br>
+page<br>
+size<br>
+返回结果<br>
+gift_id<br>
+gift_name<br>
+num<br>
+cond<br>
+desc<br>
+image<br>
+image_width<br>
+image_height<br>
+game_id<br>
+game_cond<br>
+is_exchange<br>
+is_collect<br>
+<br>
+游戏信息<br>
+http://1.93.15.5:8080/admin/interface/game<br>
+需要传参数<br>
+页数page<br>
+页数长度size<br>
+返回结果<br>
+game_id<br>
+game_name<br>
+game_info<br>
+game_image<br>
+image_width<br>
+image_height<br>
+<br>
+收藏<br>
+http://1.93.15.5:8080/admin/interface/collect<br>
+需要传参数<br>
+step 1:收藏，默认为1， 2删除收藏<br> 
+phone<br>
+gift_id<br>
+返回结果<br>
+code<br>
+msg<br>
+<br>
+收货地址<br>
+http://1.93.15.5:8080/admin/interface/list_address<br>
+需要传参数<br>
+phone<br>
+返回结果<br>
+address_id<br>
+name<br>
+address<br>
+code<br>
+address_phone<br>
+http://1.93.15.5:8080/admin/interface/address<br>
+需要传参数<br>
+type 1:添加 2 修改 3 删掉 4 设置默认<br>
+address_id （修改，删除时用到）
+name<br>
+address<br>
+code<br>
+address_phone<br>
+phone<br>
+返回结果<br>
+code<br>
+msg<br>
+<br>
+兑奖<br>
+http://1.93.15.5:8080/admin/interface/exchange<br>
+需要传参数<br>
+step<br> 1 2
+phone<br>
+address_id step为2传<br>
+code<br>
+返回结果<br>
+code<br>
+msg<br>
+<br>
+http://1.93.15.5:8080/admin/interface/search<br>
+需要传参数<br>
+word<br>
+phone<br>
+page<br>
+size<br>
+返回结果<br>
+gid<br>
+gname<br>
+num<br>
+cond<br>
+desc<br>
+image<br>
+image_width<br>
+image_height<br>
+game_id<br>
+game_cond<br>
+is_exchange<br>
+is_collect<br>
+http://1.93.15.5:8080/admin/interface/sysmsg<br>
+系统大礼包<br>
+需要传参数<br>
+page<br>
+size<br>
+返回结果<br>
+image<br>
+image_width<br>
+image_height<br>
+title<br>
+desc<br>
+http://1.93.15.5:8080/admin/interface/list_collect<br>
+
+http://1.93.15.5:8080/admin/interface/list_exchange<br>
+phone<br>
+许愿列表
+http://1.93.15.5:8080/admin/interface/list_wish<br>
+id<br>
+title<br>
+content<br>
+image<br>
+width<br>
+height<br>
+numer<br>
+http://1.93.15.5:8080/admin/interface/wish<br>
+需要传参数
+id
